@@ -1,0 +1,44 @@
+#nav{
+    background: #2195e9;
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    /* position: relative; */
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+#nav a{
+    background: transparent;
+    padding: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    font-size: 1.1rem;
+
+}
+
+#nav a:hover{
+    background: rgb(11, 128, 224);
+}
+#nav a.active{
+    background-color: rgb(11, 128, 224);
+    color: white;
+}
+
+ /* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+   
+ @media screen and (max-width:600px){
+    #nav{
+      margin-left: -2.5rem;
+       
+        
+    }
+}
